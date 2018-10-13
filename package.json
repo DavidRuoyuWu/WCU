@@ -1,16 +1,33 @@
 {
-  "name": "wcu",
-  "version": "0.0.0",
+  "name": "yveusers",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "async": "^2.6.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.2",
+    "connect-flash": "*",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "*",
     "http-errors": "~1.6.2",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.0"
+    "jquery": "^3.3.1",
+    "mongodb": "*",
+    "mongoose": "*",
+    "morgan": "~1.9.0",
+    "multer": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "^1.0.0",
+    "popper.js": "^1.14.3",
+    "pug": "*"
   }
 }
