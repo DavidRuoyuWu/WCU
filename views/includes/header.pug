@@ -1,17 +1,15 @@
 nav.navbar.navbar-expand-lg.navbar-light.bg-light
   a.navbar-brand(href='/index')
-    img.d-inline-block.align-top(src='/assets/brand/yve.svg' width='30' height='30' alt='')
-    b.brand YVE
+    img.d-inline-block.align-top(src='/icon/wcu.svg' width='40' height='40' alt='')
+    b.brand Wild Chicken University
   button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
-      li.nav-item(class=(title=='Home' ? 'active' : ''))
+      li.nav-item(class=(title=='Wild Chicken University' ? 'active' : ''))
         a.nav-link(href='/') Home
-      li.nav-item(class=(title=='Tickets' ? 'active' : ''))
-        a.nav-link(href='/tickets') Activities
-      li.nav-item(class=(title=='About' ? 'active' : ''))
-        a.nav-link(href='/about') About
+      li.nav-item(class=(title=='Catalog' ? 'active' : ''))
+        a.nav-link(href='/tickets') Class Catalog
     ul.navbar-nav.ml-auto
       if !user
         li.nav-item(class=(title=='Register' ? 'active' : ''))
