@@ -1,4 +1,4 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-light
+nav.navbar.navbar-expand-lg.navbar-light.bg-light(class=(title=='Wild Chicken University' ? 'invisible' : ''))
   a.navbar-brand(href='/index')
     img.d-inline-block.align-top(src='/icon/wcu.svg' width='40' height='40' alt='')
     b.brand Wild Chicken University
@@ -9,7 +9,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
       li.nav-item(class=(title=='Wild Chicken University' ? 'active' : ''))
         a.nav-link(href='/') Home
       li.nav-item(class=(title=='Catalog' ? 'active' : ''))
-        a.nav-link(href='/tickets') Class Catalog
+        a.nav-link(href='/catalog') Class Catalog
     ul.navbar-nav.ml-auto
       if !user
         li.nav-item(class=(title=='Register' ? 'active' : ''))
