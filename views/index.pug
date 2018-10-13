@@ -1,7 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  a.btn.btn-primary.btn-lg.main-btn(href='/catalog') Class Catalog
-  img(src="/icon/wcu.svg")
+  div.container
+    .row 
+      .col-xs-12.col-md-4
+        img.main-img(src="/icon/wcu.svg")
+      .col-xs-12.col-md-8
+        h1.title= title
+    p.lead Welcome to #{title}
+    a.btn.btn-primary.btn-lg.main-btn(href='/catalog') Class Catalog
+  

@@ -13,7 +13,6 @@
 body {
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
   font-family: alanishand;
-  padding: 50px;
 }
 
 a {
@@ -31,8 +30,16 @@ li.s1 {
 h1.title {
 	font-size: 3em;
 	font-family: ninjanaruto;
+  height: 100%;
+  margin: auto;
 }
 
 nav.navbar {
   margin: 0;
+}
+img.main-img {
+  width: 60%;
+  max-width: 400px;
+  margin: auto;
+  display: block;
 }
