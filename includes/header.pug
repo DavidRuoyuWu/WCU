@@ -1,0 +1,31 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='/home')
+    img.d-inline-block.align-top(src='/assets/brand/yve.svg' width='30' height='30' alt='')
+    b.brand YVE
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item(class=(title=='Home' ? 'active' : ''))
+        a.nav-link(href='/') Home
+      li.nav-item(class=(title=='Tickets' ? 'active' : ''))
+        a.nav-link(href='/tickets') Activities
+      li.nav-item(class=(title=='About' ? 'active' : ''))
+        a.nav-link(href='/about') About
+    ul.navbar-nav.ml-auto
+      if !user
+        li.nav-item(class=(title=='Register' ? 'active' : ''))
+          a.nav-link(href='/users/register') Register
+        li.nav-item(class=(title=='Login' ? 'active' : ''))
+          a.nav-link(href='/users/login') Log In
+      if user
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.active.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            span.sr-only (current)
+            |           Ǖ 会员服务
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/users/activity') 我的活动
+            .dropdown-divider
+            a.dropdown-item(href='/users/points') 我的积分
+        li.nav-item
+          a.nav-link(href='/users/logout') Log Out
