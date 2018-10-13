@@ -1,9 +1,36 @@
+@font-face {
+	font-family: alanishand;
+	src: url(/fonts/AlanisHand.ttf);
+	/*src: url(njnaruto.ttf);*/
+}
+
+@font-face {
+	font-family: ninjanaruto;
+	src: url(/fonts/njnaruto.ttf);
+	/*src: url(AlanisHand.ttf);*/
+}
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: alanishand;
+  padding: 50px;
 }
 
 a {
   color: #00B7FF;
+}
+
+ol.s1 {
+	font-family: alanishand;
+}
+
+li.s1 {
+	font-family: alanishand;
+}
+
+h1.title {
+	font-size: 3em;
+	font-family: ninjanaruto;
 }
 
 nav.navbar {
