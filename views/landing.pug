@@ -8,16 +8,25 @@ head
   link(rel='stylesheet' href='/stylesheets/home.css')
   link(rel='stylesheet' href='/stylesheets/land.css')
   script(src='https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js')
-.body-wrap.boxed-container
-  header.site-header
-    .header-sun.is-revealing
-      svg(src='/icon/wcu.svg')
-    .container
-      .site-header-inner
-        .brand.header-brand
-          h1.m-0
-            a(href='/landing')
-              svg()
+body
+  .container
+    .site-header-inner
+      .brand.header-brand
+        h1.m-0
+          a(href='#')
+            svg(width='44' height='32' viewbox='0 0 44 32' xmlns='http://www.w3.org/2000/svg')
+              title WCU
+              defs
+                lineargradient#logo-a(x1='97.927%' y1='0%' x2='1.669%' y2='0%')
+                  stop(stop-color='#82DDFC' offset='0%')
+                  stop(stop-color='#0181F6' offset='100%')
+                lineargradient#logo-b(x1='96.64%' y1='1.497%' x2='0%' y2='44.56%')
+                  stop(stop-color='#A3A9F1' offset='0%')
+                  stop(stop-color='#6A72E4' offset='99.203%')
+                  stop(stop-color='#6A6FEC' offset='100%')
+              path(d='M0 16h8a8 8 0 1 0 16 0h8c0 8.837-7.163 16-16 16S0 24.837 0 16z' fill='url(#logo-a)')
+              path(d='M12 0h8a8 8 0 1 0 16 0h8c0 8.837-7.163 16-16 16S12 8.837 12 0z' fill='url(#logo-b)' transform='rotate(180 28 8)')
+
   main
     section.hero
       .container
