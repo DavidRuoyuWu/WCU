@@ -7,10 +7,10 @@ block content
         .row
           .col 
           .col-lg-4.col-md-6.col-sm-10.col-xs-12
-            img.avatar(src='/assets/brand/avatar.jpeg' alt='user avatar')
+            img.avatar(src='/images/egg.png' alt='user avatar')
             br
             br
-            h5.welcome Dear wildchickenuniversity Member： #{user.name}
+            h5.welcome Dear WCU Member： #{user.name}
             button.btn.btn-lg.btn-danger.welcome(type='button') Your pints: #{user.miles} miles
           .col
         
@@ -20,3 +20,30 @@ block content
     .card 
      .card-title
        h3 My Classes
+       p.lead Oh no, you havn't added any courses.
+       button.btn.btn-primary.welcome Add Courses
+       h3 Recommended course for you
+       .card
+         .card-header
+           | Linear Algebra
+           .card-body
+             h5.card-title Linear Algebra
+             p.card-text The branch of mathematics that is concerned with mathematical structures closed under the operations of addition and scalar multiplication and that includes the theory of systems of linear equations, matrices, determinants, vector spaces, and linear transformations.
+             a.btn.btn-primary(href='/linearAlgebra') Go to the course
+       br
+       .card
+         .card-header
+           | Python
+           .card-body
+             h5.card-title Introduction to Python
+             p.card-text  Python is an easy to learn, general-purpose, and powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
+             a.btn.btn-primary(href='/python') Go to the course
+       br
+       .card
+         .card-header
+           | Microeconomics
+           .card-body
+             h5.card-title Microeconomics
+             p.card-text Microeconomics is a branch of economics that studies the behavior of individuals and firms in making decisions regarding the allocation of scarce resources and the interactions among these individuals and firms.
+             a.btn.btn-primary(href='/microeconomics') Go to the course
+       

@@ -76,6 +76,9 @@ img.main-img {
     margin: auto;
     width: 40%;
   }
+  .form-check-label{
+    margin-left: 50px;
+  }
 b,
 strong {
   font-weight: inherit; }
