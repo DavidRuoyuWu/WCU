@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .container.signin-container
+    if errors
+      each error, i in errors
+        div.alert.alert-danger #{error.msg}
+  .row
+    .col
+    .col-sm-12.col-md-8
+      .card.signin-card
+        .card-block#signin-img
+          form#signin-form(method='post', action='/users/register',enctype='multipart/form-data')
+            .form-group
+              input#nameInput.form-control(name='name' required='required' type='text' placeholder='Name')
+            .form-group
+              input#usernameInput.form-control(name='username' required='required' type='text' placeholder='Username')
+            .form-group
+              input#emailInput.form-control(name='email' type='email' required='required' placeholder='email：example@example.com')
+            .form-group
+              input#passwordInput.form-control(name='password' type='password' required='required' placeholder='Password')
+            .form-group
+              input#password2Input.form-control(name='password2' type='password' required='required' placeholder='retype your password')
+            //- .form-group
+            //-   label Avatar
+            //-   input#profile.form-control(name='profileImage' type='file')
+            input.btn.btn-primary.main-btn(type='submit', name='submit', value='Sign Up')
+            label.form-check-label
+              input.form-check-input(type='checkbox' required="")
+              |  I agree
+              a(href='/users/terms')  terms and conditions.
+              br
+              a(href='/users/help')  need help?
+              a(href='/users/forgot')  forgot password?
+      a.create-new-account(href='/users/login') I've already got an account
+    .col

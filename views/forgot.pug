@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container.signin-container
+  .row
+    .col
+    .col-sm-12.col-md-8
+      .card.signin-card
+        .card-block
+          img#signin-img.img-fluid(src='/assets/brand/login.JPG')
+          form(method='post', action='/users/forgot')
+            .form-group
+              input#usernameInput.form-control(name='email' type='email' required='required' placeholder='Email Address')
+            .form-group
+              labal We will need your email address you registered
+            input.btn.btn-primary.main-btn(type='submit', name='submit', value='Find my password')
+            br
+          a(href='/users/help')  need help？
+      a.create-new-account(href='/users/register') new account？
+    .col
