@@ -43,9 +43,21 @@ h1.title {
 	display: block;
 	padding-top: 60px;
 }
+<<<<<<< HEAD
+
+h1.looking {
+	text-align: center;
+	font-weight: bold;
+	/*font-size: 35px;*/
+}
+
+form.form-inline {
+	width: 100%;
+=======
 b.brand {
 	padding: 5px;
 	margin-bottom: -5px;
+>>>>>>> a8d56644c7495bd6a2684bc9bfc01b0d409a3a46
 }
 /*
 nav.navbar {
