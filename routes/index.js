@@ -41,7 +41,22 @@ router.post('/', function (req, res) {
   } else if (search === 'linear algebra') {
     res.redirect('/linearAlgebra');
   } else {
-    req.flash('error', 'No match courses found.');
+    req.flash('success_msg', 'course not found');
+    res.redirect('/catalog');
+  }
+
+});
+
+router.post('/catalog', function (req, res) {
+	let search = req.body.class;
+  if (search === 'python') {
+    res.redirect('/python');
+  } else if (search === 'microeconomics') {
+    res.redirect('/microeconomics');
+  } else if (search === 'linear algebra') {
+    res.redirect('/linearAlgebra');
+  } else {
+    req.flash('success_msg', 'course not found');
     res.redirect('/catalog');
   }
 

@@ -3,6 +3,11 @@ extends layout
 block content
     div.container
       h3.looking List of courses
+      form.hero-form.newsletter-form.field.field-grouped.is-revealing(method='post', action='/catalog')
+        .control.control-expanded
+          input.input(type='text' name='class' placeholder='Ex: Linear Algebra')
+        .control 
+          input.button.button-primary.button-block.button-shadow(type='submit', name='submit', value='Get the plan')
       br
       .card
         .card-header
