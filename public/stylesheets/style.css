@@ -28,18 +28,26 @@ li.s1 {
 }
 
 h1.title {
-	font-size: 3em;
+	font-size: 40px;
 	font-family: ninjanaruto;
-  height: 100%;
-  margin: auto;
+	height: 100%;
+	margin: auto;
+	display: block;
+	padding-top: 60px;
 }
 
 nav.navbar {
   margin: 0;
 }
 img.main-img {
-  width: 60%;
+  width: 40%;
   max-width: 400px;
   margin: auto;
   display: block;
+}
+
+.square {
+    width: 100%;
+    height: 100px;
+    Background-color: #D2691E;/* Your Color */
 }
