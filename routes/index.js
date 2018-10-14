@@ -20,7 +20,7 @@ router.get('/landing', function(req, res){
 });
 
 router.get('/python', function(req, res, next) {
-  res.render('catalog', { title: 'WCU Class - python' });
+  res.render('python', { title: 'WCU Class - python' });
 });
 
 router.get('/linearAlgebra', function(req, res){
