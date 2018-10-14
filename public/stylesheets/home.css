@@ -1673,3 +1673,7 @@ main {
     margin-bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+}
