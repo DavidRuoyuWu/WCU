@@ -14,6 +14,10 @@ router.get('/home',  ensureAuthenticated, function(req, res){
 	res.render('home',{title: 'Home'});
 });
 
+router.get('/landing', function(req, res){
+	res.render('landing',{title: 'Welcome to wildchickenuniversity'});
+});
+
 function ensureAuthenticated(req, res, next){
 	if(req.isAuthenticated()){
 		return next();
