@@ -8,6 +8,8 @@ head
   link(rel='stylesheet' href='/stylesheets/home.css')
   link(rel='stylesheet' href='/stylesheets/land.css')
   script(src='https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js')
+<<<<<<< HEAD
+=======
 body
   .container
     .site-header-inner
@@ -26,6 +28,11 @@ body
                   stop(stop-color='#6A6FEC' offset='100%')
               path(d='M0 16h8a8 8 0 1 0 16 0h8c0 8.837-7.163 16-16 16S0 24.837 0 16z' fill='url(#logo-a)')
               path(d='M12 0h8a8 8 0 1 0 16 0h8c0 8.837-7.163 16-16 16S12 8.837 12 0z' fill='url(#logo-b)' transform='rotate(180 28 8)')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6704382e0699ac4b1646ad631d77fe544d69cf9d
+>>>>>>> 5beb4775ce2a566c5ef863c226fcdb3d9222e5fe
   main
     section.hero
       .container
