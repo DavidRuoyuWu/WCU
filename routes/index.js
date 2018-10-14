@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Wild Chicken University' });
+  res.render('landing', { title: 'Wild Chicken University' });
 });
 
 router.get('/catalog', function(req, res, next) {
