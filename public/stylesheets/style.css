@@ -10,9 +10,10 @@
 	/*src: url(AlanisHand.ttf);*/
 }
 
-body {
+html body {
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
   font-family: alanishand;
+	background: linear-gradient(#d2691e,yellow);
 }
 
 a {
