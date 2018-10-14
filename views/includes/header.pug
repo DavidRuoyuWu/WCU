@@ -18,12 +18,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light(class=(title=='Wild Chicken Un
           a.nav-link(href='/users/login') Log In
       if user
         li.nav-item.dropdown
-          a#navbarDropdown.nav-link.active.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          a#navbarDropdown.nav-link.active(href='/home' role='button' )
             span.sr-only (current)
             |           Members
-          .dropdown-menu(aria-labelledby='navbarDropdown')
-            a.dropdown-item(href='/users/activity') My activities
-            .dropdown-divider
-            a.dropdown-item(href='/users/points') My Points: #{user.miles}
         li.nav-item
           a.nav-link(href='/users/logout') Log Out
