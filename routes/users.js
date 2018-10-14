@@ -22,9 +22,6 @@ router.get('/login', function(req, res, next) {
   res.render('login',{title:'Login'});
 });
 
-router.get('/buy', ensureAuthenticated, function(req, res, next) {
-  res.render('buy',{title:'Buy Tickets'});
-});
 
 router.get('/help', function(req, res, next) {
   res.render('help',{title:'Help'});

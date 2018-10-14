@@ -1,0 +1,22 @@
+extends layout
+
+block content  
+  .container
+    .card 
+     .card-body
+        .row
+          .col 
+          .col-lg-4.col-md-6.col-sm-10.col-xs-12
+            img.avatar(src='/assets/brand/avatar.jpeg' alt='user avatar')
+            br
+            br
+            h5.welcome Dear wildchickenuniversity Member： #{user.name}
+            button.btn.btn-lg.btn-danger.welcome(type='button') Your pints: #{user.miles} miles
+          .col
+        
+  br
+  br
+  .container
+    .card 
+     .card-title
+       h3 My Classes
