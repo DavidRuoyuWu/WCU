@@ -43,6 +43,16 @@ h1.title {
 	display: block;
 	padding-top: 60px;
 }
+
+h1.looking {
+	text-align: center;
+	font-weight: bold;
+	/*font-size: 35px;*/
+}
+
+form.form-inline {
+	width: 100%;
+}
 /*
 nav.navbar {
   margin: 0;
