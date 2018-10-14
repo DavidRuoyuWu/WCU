@@ -57,3 +57,7 @@ img.main-img {
   margin: auto;
   display: block;
 }
+.btn.main-btn {
+  display: block;
+  margin: auto;
+}
