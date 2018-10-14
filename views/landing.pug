@@ -25,9 +25,9 @@ head
           .hero-copy
             h1.hero-title.mt-0 Wild Chicken Univeristy
             p.hero-paragraph
-              | A place to know how the other people learn.
+              | A place to learn.
             p.hero-cta
-              a.button.button-primary.button-shadow(href='users/register') Sign Up now
+              a.button.button-primary.button-shadow(href='users/register') Get Started
               a(href='/users/login') 
                 p.hero-paragraph Returning users?
           .hero-illustration
@@ -35,11 +35,19 @@ head
               img(src='/icon/wcu.svg')
     section.clients.section
       .container
+        .features-extended-inner.section-inner.has-top-divider
+          .features-extended-header.text-center
+            .container-sm
+              h2.section-title.mt-0#about Start Learning Now:
+              p.section-paragraph
+                | 
         .hero-form.newsletter-form.field.field-grouped.is-revealing
           .control.control-expanded
-            input.input(type='text' name='class' placeholder='Your Class')
+            input.input(type='text' name='class' placeholder='Ex: Linear Algebra')
           .control 
-            input.button.button-primary.button-block.button-shadow(type='submit', name='submit', value='Get the plan')
+            input.button.button-primary.button-block.button-shadow(type='submit', name='submit', value='Search')
+        p.section-paragraph
+          | 
     section.features-extended.section
       .container
         .features-extended-inner.section-inner.has-top-divider
@@ -80,7 +88,7 @@ head
             .feature-extended-body
               h3.mt-0 Discover
               p
-                | In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.
+                | Want to dive deeper into a particular subject but can't find the particular resources to do so? WCU provides easy access to courses and lectures taught by masters in the field.
           .feature-extended
             .feature-extended-image.is-revealing
               svg(width='480' height='320' viewbox='0 0 480 320' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
@@ -114,9 +122,9 @@ head
                     path(fill='#A3A9F1' d='M155.041 107.506l-32.137-13.509-10.217-32.136 11.426-30.928 30.857-12.855.048 3.718-27.333 12.71-11.828 27.355 11.467 27.717 27.717 11.155 29.33-9.54 10.83-29.274 2.194.484-11.986 29.826z')
                     path(fill='#6A72E4' d='M155.041 85.403l-23.39-23.542 23.436-24.15-.298 3.456-20.48 20.694 20.732 20.874 19.406-21.089 3.877.432z')
             .feature-extended-body
-              h3.mt-0 Discover
+              h3.mt-0 Learn
               p
-                | In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.
+                | Each course is carefully selected to be free, open-source, and, most importantly, effective. Whether you just wanted to learn a particular something as a hobby, or perhaps want to start a career in this subject, WCU will fulfill your needs.
           .feature-extended
             .feature-extended-image.is-revealing
               svg(width='480' height='320' viewbox='0 0 480 320' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
@@ -140,9 +148,9 @@ head
                   path(d='M126 197.156l23.039 15.424L173.495 225l23.756-13.614L223 198.298l-12.63-5.63 5.38 4.892-21.271 12.342-20.984 13.869-21.457-13.07-21.796-12.346 10.232-4.303L137.77 191 126 197.156zm82.883-5.15l1.486.662-1.087-.987-.399.325z' fill='#82DDFC')
                   path(fill='#0181F6' d='M206.966 215.77l8.251 3.372-21.268 11.975-20.62 13.946-20.588-14.002-20.915-12.222 6.688-4.057-1.038-1.43L124 220.1l25.242 13.641L173.329 249l23.105-16.848L221 219.166 209.293 213zM149.437 163.074L125 176.071l22.751 15.829 24.857 13.1 24.829-13.168L222 176.072l-24.713-15.532-24.68-11.54-23.17 14.074zm3.109 23.94l-21.518-10.943 21.488-11.009 20.092-12.469 20.238 12.238 23.199 11.24-21.69 13.775-21.747 11.489-20.062-14.32z')
             .feature-extended-body
-              h3.mt-0 Discover
+              h3.mt-0 Track
               p
-                | In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.
+                | Learning requires spending time and effort. Rack your brains through challenging problem sets. Take notes on hard-to-grasp lectures. Track your course progress on our website.
     section.testimonials.section
       .container
         .testimonials-inner.section-inner
@@ -184,79 +192,6 @@ head
                   .testimonial-name David Harris
                   .testimonial-link
                     a(href='#') traction.com
-    section.pricing.section
-      .container
-        .pricing-inner.section-inner
-          h2.section-title.mt-0.text-center Pricing
-          .pricing-tables-wrap
-            .pricing-table.is-revealing
-              .pricing-table-inner
-                .pricing-table-main
-                  .pricing-table-header
-                    .pricing-table-title.mt-12.mb-16 Monthly
-                    .pricing-table-price.pb-32
-                      span.pricing-table-price-currency.h3 $
-                      span.pricing-table-price-amount.h1 29
-                      | /m
-                  ul.pricing-table-features.list-reset.text-xs
-                    li
-                      span Lorem ipsum dolor sit consectetur
-                    li
-                      span Lorem ipsum dolor sit consectetur
-                    li
-                      span Lorem ipsum dolor sit consectetur
-                .pricing-table-cta
-                  a.button.button-primary.button-shadow.button-block(href='#') Get started
-            .pricing-table.pricing-table-primary.text-light.is-revealing
-              .pricing-table-inner
-                .pricing-table-main
-                  .pricing-table-header
-                    .pricing-table-title.mt-12.mb-16 Yearly
-                    .pricing-table-price.pb-32
-                      span.pricing-table-price-currency.h3 $
-                      span.pricing-table-price-amount.h1 19
-                      | /m
-                  ul.pricing-table-features.list-reset.text-xs
-                    li
-                      span Lorem ipsum dolor sit consectetur
-                    li
-                      span Lorem ipsum dolor sit consectetur
-                    li
-                      span Lorem ipsum dolor sit consectetur
-                    li
-                      span Lorem ipsum dolor sit consectetur
-                .pricing-table-cta
-                  a.button.button-shadow.button-block(href='#') Get started
-          .pricing-faqs.container-sm#faq
-            ul.accordion
-              li
-                .accordion-title
-                  span In a professional context it often happens that private?
-                  .accordion-icon
-                .accordion-body
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              li
-                .accordion-title
-                  span Lorem ipsum dolor sit amet, consectetur
-                  .accordion-icon
-                .accordion-body
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              li
-                .accordion-title
-                  span In a professional context it often happens that private?
-                  .accordion-icon
-                .accordion-body
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              li
-                .accordion-title
-                  span Lorem ipsum dolor sit amet, consectetur
-                  .accordion-icon
-                .accordion-body
-                  p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   footer.site-footer
     .container
       .site-footer-inner
