@@ -6,6 +6,20 @@
 	* normalize.css v7.0.0 | MIT License
 	* github.com/necolas/normalize.css
 --------------------------------------------------------------*/
+@font-face {
+	font-family: ninjanaruto;
+	src: url(/fonts/njnaruto.ttf);
+}
+
+@font-face {
+	font-family: qarmic-sans;
+	src: url(/fonts/Qarmic_sans_Abridged.ttf);
+}
+
+html body {
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+	font-family: qarmic-sans;
+}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
