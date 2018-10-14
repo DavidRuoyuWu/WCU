@@ -1,9 +1,4 @@
 @font-face {
-	font-family: alanishand;
-	src: url(/fonts/AlanisHand.ttf);
-}
-
-@font-face {
 	font-family: ninjanaruto;
 	src: url(/fonts/njnaruto.ttf);
 }
@@ -31,11 +26,11 @@ a {
 }
 
 ol.s1 {
-	font-family: alanishand;
+	font-family: qarmic-sans;
 }
 
 li.s1 {
-	font-family: alanishand;
+	font-family: qarmic-sans;
 }
 
 h1.title {

@@ -27,7 +27,7 @@ head
             p.hero-paragraph
               | A place to learn.
             p.hero-cta
-                a.button.button-primary.button-shadow(href='users/register') Get Started
+              a.button.button-primary.button-shadow(href='users/register') Get Started
               a(href='/users/login') 
                 p.hero-paragraph Returning users?
           .hero-illustration
@@ -35,11 +35,23 @@ head
               img(src='/icon/wcu.svg')
     section.clients.section
       .container
+<<<<<<< HEAD
         form.hero-form.newsletter-form.field.field-grouped.is-revealing(method='post', action='/')
+=======
+        .features-extended-inner.section-inner.has-top-divider
+          .features-extended-header.text-center
+            .container-sm
+              h2.section-title.mt-0#about Start Learning Now:
+              p.section-paragraph
+                | 
+        .hero-form.newsletter-form.field.field-grouped.is-revealing
+>>>>>>> d350c59d789149c2c62f8d35576f10cb7afe9839
           .control.control-expanded
             input.input(type='text' name='class' placeholder='Ex: Linear Algebra')
           .control 
-            input.button.button-primary.button-block.button-shadow(type='submit', name='submit', value='Get the plan')
+            input.button.button-primary.button-block.button-shadow(type='submit', name='submit', value='Search')
+        p.section-paragraph
+          | 
     section.features-extended.section
       .container
         .features-extended-inner.section-inner.has-top-divider
