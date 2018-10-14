@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const flash = require("connect-flash");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
