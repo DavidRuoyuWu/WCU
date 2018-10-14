@@ -10,4 +10,12 @@ router.get('/catalog', function(req, res, next) {
   res.render('catalog', { title: 'WCU Class Catalog' });
 });
 
+function ensureAuthenticated(req, res, next){
+	if(req.isAuthenticated()){
+		return next();
+	} else {
+		res.redirect('/');
+	}
+}
+
 module.exports = router;

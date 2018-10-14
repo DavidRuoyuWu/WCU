@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 FAQ
+  .container
+    .card 
+      .card-body
+        h3 Contact Us
+        br
+        a(href='mailto://')
+          button.btn.btn-primary.btn-large.buy-btn email
+        br
+        button.btn.buy-btn.btn-primary(type='button' data-toggle='modal' data-target='#contacts') Contacts
+        
+        
+        #contacts.modal.fade(tabindex='-1' role='dialog' aria-labelledby='YVE助手' aria-hidden='true')
+         .modal-dialog.modal-dialog-centered(role='document')
+          .modal-content
+            .modal-header
+              h5 We don't have any accounts
+            .modal-body
+              img(src='/assets/brand/accounts.JPG')
+            .modal-footer
+              button.btn.btn-secondary(type='button' data-dismiss='modal') Back

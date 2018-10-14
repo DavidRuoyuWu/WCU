@@ -9,15 +9,15 @@ block content
         .card-block#signin-img
           form#signin-form(method='post', action='/users/login')
             .form-group
-              input#usernameInput.form-control(name='username' type='text' required='required' placeholder='用户名')
+              input#usernameInput.form-control(name='username' type='text' required='required' placeholder='Username')
             .form-group
-              input#passwordInput.form-control(name='password' type='password' required='required' placeholder='密码')
-            input.btn.btn-primary.main-btn(type='submit', name='submit', value='登录')
+              input#passwordInput.form-control(name='password' type='password' required='required' placeholder='Password')
+            input.btn.btn-primary.main-btn(type='submit', name='submit', value='Log In')
             label.form-check-label
               input.form-check-input(type='checkbox')
-              |  记住账号
+              |  remember
               br
-              a(href='/users/help')  需要帮助？
-              a(href='/users/forgot')  忘记密码？
-      a.create-new-account(href='/users/register') 没有账号？
+              a(href='/users/help')  need help?
+              a(href='/users/forgot')  forget password?
+      a.create-new-account(href='/users/register') new account?
     .col
