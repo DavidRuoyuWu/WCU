@@ -1,12 +1,14 @@
 extends layout
 
 block content
+  div.square
   div.container
     .row 
       .col-xs-12.col-md-4
         img.main-img(src="/icon/wcu.svg")
       .col-xs-12.col-md-8
         h1.title= title
+    br
     p.lead Welcome to #{title}
     form.form-inline
       input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
