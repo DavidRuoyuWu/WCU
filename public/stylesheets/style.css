@@ -8,6 +8,10 @@
 	src: url(/fonts/Qarmic_sans_Abridged.ttf);
 }
 
+h1.hero-title {
+	display: inline-block !important;
+}
+
 html body {
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 	font-family: qarmic-sans;
@@ -66,10 +70,10 @@ nav.navbar {
 	margin-left: 30px;
 }
 img.main-img {
-  width: 40%;
+  width: 20%;
   max-width: 400px;
   margin: auto;
-  display: block;
+  display: inline-block;
 }
 .input-lg {
     height: 50px;
