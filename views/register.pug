@@ -10,6 +10,7 @@ block content
     .col-sm-12.col-md-8
       .card.signin-card
         .card-block#signin-img
+          img.main-img(src="/icon/wcu.svg")
           form#signin-form(method='post', action='/users/register',enctype='multipart/form-data')
             .form-group
               input#nameInput.form-control(name='name' required='required' type='text' placeholder='Name')
