@@ -11,7 +11,10 @@
 h1.hero-title {
 	display: inline-block !important;
 }
-
+img.main-img {
+	width: 50%;
+	max-height: 30vh;
+}
 html body {
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 	font-family: qarmic-sans;
