@@ -20,10 +20,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light(class=(title=='Wild Chicken Un
         li.nav-item.dropdown
           a#navbarDropdown.nav-link.active.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
             span.sr-only (current)
-            |           Ǖ 会员服务
+            |           Members
           .dropdown-menu(aria-labelledby='navbarDropdown')
-            a.dropdown-item(href='/users/activity') 我的活动
+            a.dropdown-item(href='/users/activity') My activities
             .dropdown-divider
-            a.dropdown-item(href='/users/points') 我的积分
+            a.dropdown-item(href='/users/points') My Points: #{user.miles}
         li.nav-item
           a.nav-link(href='/users/logout') Log Out

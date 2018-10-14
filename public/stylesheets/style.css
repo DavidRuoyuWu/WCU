@@ -43,6 +43,10 @@ h1.title {
 	display: block;
 	padding-top: 60px;
 }
+b.brand {
+	padding: 5px;
+	margin-bottom: -5px;
+}
 /*
 nav.navbar {
   margin: 0;
