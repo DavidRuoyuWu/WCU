@@ -1,6 +1,7 @@
-div.row
+div.row.message
   div.col-12
     if success_msg.length > 0
-        div.alert.alert-success #{success_msg}
-    div.alert.alert-danger 
-      != messages()
+      div.alert.alert-success #{success_msg}
+    if messages()
+      div.alert.alert-danger 
+        != messages()
