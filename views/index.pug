@@ -1,7 +1,6 @@
 extends layout
 
 block content
-  div.square
   div.container
     .row 
       .col-xs-12.col-md-4
@@ -12,8 +11,11 @@ block content
     h1.looking Looking for a course?
     br
     br
-    form.form-inline
-      input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
+    form
+      input.form-control.input-lg.searchbar(type="search" placeholder="Ex: Linear Algebra" aria-label="Search")
       button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
+    br
+    br
+    h3.looking Alternatively, take a look at our class catalog
     a.btn.btn-primary.btn-lg.main-btn(href='/catalog') Class Catalog
   
